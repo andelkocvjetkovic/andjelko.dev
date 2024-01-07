@@ -8,8 +8,7 @@ layout: ../layouts/base-layout.astro
 
 I currently work as a Frontend Developer at Codepool. 
 I am a developer who loves to code on the web using my favorite language TypeScript in combination with React.
-Currently learning how to minimize side effects and how to write pure functions(a big fan of functional programming).
-Also I am a big fan of Neovim, I am using it for almost 2 years.
+Currently learning how to minimize side effects and how to write pure functions(a big fan of functional programming), also a big fan of Neovim, I am using it for almost 2 years.
 
 
 
