@@ -47,7 +47,7 @@ Throughout my career, I have acquired various skills, and I am thrilled to solve
 Here is a list:
 
  - TypeScript(My favorite language)
- - React(my favorite frontend framework)
+ - React(My favorite frontend framework)
  - Neovim
  - Next.js
  - Node.js
