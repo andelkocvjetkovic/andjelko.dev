@@ -32,7 +32,7 @@ However, there was an interesting challenge: we used render.io to host our Strap
 Next project is a [Shidou](https://app.shidou.io), I have been working on this project for 2 years.
 It is a platform for project managment, it relies on SCRUM methodology, and tries to streamline users how to use SCRUM the right way.
 I have been working on the frontend part of the project, I have created all the pages and components, and helped in creating a custom design system for the project.
-Project is really big, I have to created a landing page, App, and monitoring dashboard for root users. 
+Project is really big, I have to created a landing page(Next.js), App(SPA React), and a monitoring dashboard for root users(SPA React). 
 I have used several build tools, like Vite and Next.js within a monorepo, and created a CSS library for the project. 
 It soons will be released, but if you want to see it in action, send me an [andjelko.cvjetkovic@gmail.com](mailto:andjelko.cvjetkovic@gmail.com) and I will send you an invitation.
 
