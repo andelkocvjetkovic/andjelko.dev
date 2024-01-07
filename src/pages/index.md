@@ -23,7 +23,7 @@ I have worked on several projects, but I'll highlight the most notable ones.
 
 
 My first project was a [Villa in Croatia](https://villahana-croatia.com/), I got web site which was really slow, it was bought from wordpress theme market and it was really bad.
-I have transformed it into really fast and responsive web site, I have used Next.js and TailwindCSS. 
+I have transformed it into really fast and responsive web site, I have used Next.js and Bootstrap for the project.
 Also I have connected it with Strapi CMS and created a custom CMS for the client. 
 However, there was an interesting challenge: we used render.io to host our Strapi CMS. Unfortunately, I hadn't created a backup for the CMS, and one day render.io deleted our instance, leading to the loss of all data. Explaining the loss of all the photos to the client was a daunting task.
 
