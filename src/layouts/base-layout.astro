@@ -1,0 +1,46 @@
+---
+import { Image } from 'astro:assets';
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import Prose from '../components/prose.astro';
+import '@fontsource/be-vietnam-pro';
+import avatar from '../images/avatar.jpeg';
+
+
+const {frontmatter} = Astro.props;
+const {name, position, company, company_url} = frontmatter;
+
+
+---
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Andjelko Cvjetkovic</title>
+  </head>
+  <body class='container'>
+    <main class='pt-20 pb-16'>
+      <div class='flex max-w-[65ch] mx-auto pb-6'>
+        <div class='flex gap-x-6'>
+          <Image
+            class='w-20 h-20 border-black border-2 rounded-md object-center object-cover'
+            width={80}
+            height={80}
+            src={avatar} 
+            alt={name}
+          />
+          <div>
+            <h1 class='text-2xl'>{name}</h1>
+            <p class='text-sm'>{position} at 
+              <a href={company_url} class='text-orange-500 underline' target='_blank' rel='noopener noreferrer'
+              >{company}</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <Prose>
+        <slot /> 
+      </Prose>
+    </main>
+  </body>
+</html>
