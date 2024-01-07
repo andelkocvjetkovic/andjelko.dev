@@ -66,7 +66,9 @@ Here is a list:
 
 I am always open for new opportunities, so if you want to hire me, or you want to work with me, feel free to contact me.
 
-You can contact me on [andjelko.cvjetkovic@gmail.com](mailto:andjelko.cvjetkovic@gmail.com) or on [LinkedIn](https://www.linkedin.com/in/andelkocvjekovic/).
+You can contact me on [andjelko.cvjetkovic@gmail.com](mailto:andjelko.cvjetkovic@gmail.com)
+or on [LinkedIn](https://www.linkedin.com/in/andelkocvjekovic/)
+or on [Twitter](https://twitter.com/andjelko_dev)
 
 Or if you want to see my code, you can check my [Github](https://github.com/andelkocvjetkovic).
 
