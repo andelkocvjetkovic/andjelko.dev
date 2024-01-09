@@ -25,7 +25,7 @@ I have worked on several projects, but I'll highlight the most notable ones.
 My first project was a [Villa Hana in Croatia](https://villahana-croatia.com/), I got [a web site](https://villa-hana.vercel.app/) which was really slow, it was bought from wordpress theme market and it was really bad.
 I have transformed it into really fast and responsive web site, I have used Next.js and Bootstrap for the project.
 Also I have connected it with Strapi CMS and created a custom CMS for the client. 
-However, there was an interesting challenge: we used render.io to host our Strapi CMS. Unfortunately, I hadn't created a backup for the CMS, and one day render.io restarted their servers, leading to the loss of all data. Explaining the loss of all the photos to the scrum master was a daunting task.
+However, there was an interesting challenge: we used [render.com](https://render.com/) to host our Strapi CMS. Unfortunately, I hadn't created a backup for the CMS, and one day render.io restarted their servers, leading to the loss of all data. Explaining the loss of all the photos to the scrum master was a daunting task.
 
 
 Next project is a [Shidou](https://app.shidou.io), I have been working on this project for 2 years.
@@ -43,7 +43,7 @@ My last recent project was a one page web site for [ALJ-ENTERPRISE](https://alj-
 ## Skills
 
 Throughout my career, I have acquired various skills, and I am thrilled to solve problems using them.
-Here is a list:
+Here is the list:
 
  - TypeScript(My favorite language)
  - React(My favorite frontend framework)
@@ -59,18 +59,19 @@ Here is a list:
  - Unit testing with Jest
  - Integration testing with React Testing Library
  - E2E testing with Playwright
+ - Turborepo
 
 
 
 ## Contact
 
-I am always open for new opportunities, so if you want to hire me, or you want to work with me, feel free to contact me.
+If you have any questions or want to get in touch, feel free to contact me.
 
 You can contact me on [andjelko.cvjetkovic@gmail.com](mailto:andjelko.cvjetkovic@gmail.com)
 or on [LinkedIn](https://www.linkedin.com/in/andelkocvjekovic/)
 or on [Twitter](https://twitter.com/andjelko_dev)
 
-Or if you want to see my code, you can check my [Github](https://github.com/andelkocvjetkovic).
+Or if you want to see my code, you can check it on [Github](https://github.com/andelkocvjetkovic).
 
 
 ### Thanks
