@@ -1,6 +1,6 @@
 ---
 name: Andjelko Cvjetkovic
-position: Frontend Developer
+position: Front-end Developer
 company: Codepool
 company_url: https://codepool.io
 layout: ../layouts/base-layout.astro
@@ -14,11 +14,11 @@ Currently learning how to minimize side effects and how to write pure functions(
 
 ## Experience
 
-### Frontend Developer at Codepool
+### Front-end Developer at Codepool
 
 ***06.2021 - Still going*** 
 
-I started as a Junior Frontend Developer and, after one year, was promoted to a Mid-level Frontend Developer.
+I started as a Junior Front-end Developer and, after one year, was promoted to a Mid-level position.
 I've worked on several projects, but I'll highlight the most notable ones.
 
 
@@ -46,7 +46,7 @@ Throughout my career, I've acquired various skills, and I am thrilled to solve p
 Here is the list:
 
  - TypeScript(My favorite language)
- - React(My favorite frontend framework)
+ - React(My favorite front-end framework)
  - Neovim
  - Next.js
  - Node.js
@@ -55,7 +55,7 @@ Here is the list:
  - Rest API and Postman
  - Browser APIs
  - Git
- - Frontend build tools
+ - Front-end build tools
  - Unit testing with Jest
  - Integration testing with React Testing Library
  - E2E testing with Playwright
