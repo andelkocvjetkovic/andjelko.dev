@@ -30,9 +30,9 @@ However, there was an interesting challenge: we used [render.com](https://render
 
 Next project is a [Shidou](https://app.shidou.io), I've been working on this project for 2 years.
 It's a platform for project managment, it relies on SCRUM methodology, and tries to streamline users how to use SCRUM the right way.
-I've been working on the front-end part of the project. I've created all the pages, components, connected it to the back-end and was involved in creating a design system for the project.
+I've been working on the front-end part of the project. I've created all the pages, components, connected it to the back-end and I was involved in creating a design system for the project.
 Project is really big, it has a landing page(Next.js), App(SPA React), and a monitoring dashboard for root users(SPA React). 
-I've used several build tools, like Vite and Next.js within a monorepo, and created a CSS library for the project. 
+I've used several build tools, like Vite and Next.js within a monorepo, created a CSS library for the project and build custom graphs for reporting.
 It's going to be released soon, but if you want to see it in action, send me an [andjelko.cvjetkovic@gmail.com](mailto:andjelko.cvjetkovic@gmail.com) and I'll send you an invitation.
 
 
