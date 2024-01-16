@@ -16,7 +16,7 @@ Currently learning how to minimize side effects and how to write pure functions(
 
 ### Front-end Developer at Codepool
 
-***06.2021 - Still going*** 
+***06.2021 - Still ongoing*** 
 
 I started as a Junior Front-end Developer and, after one year, was promoted to a Mid-level position.
 I've worked on several projects, but I'll highlight the most notable ones.
