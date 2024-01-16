@@ -36,7 +36,7 @@ I've used several build tools, like Vite and Next.js within a monorepo, created 
 It's going to be released soon, but if you want to see it in action, send me an [andjelko.cvjetkovic@gmail.com](mailto:andjelko.cvjetkovic@gmail.com) and I'll send you an invitation.
 
 
-My last recent project was a one page web site for [Alj enterprise](https://alj-web.vercel.app/en), project is still under development, so I'll update this when it is finished.
+My last recent project was a one page web site for [ALJ Enterprise](https://alj-web.vercel.app/en), project is still under development, so I'll update this when it is finished.
 
 
 
