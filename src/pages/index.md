@@ -33,7 +33,7 @@ It's a platform for project managment, it relies on SCRUM methodology, and tries
 I've been working on the front-end part of the project. I've created all the pages, components, connected it to the back-end and I was involved in creating a design system for the project.
 Project is really big, it has a landing page(Next.js), App(SPA React), and a monitoring dashboard for root users(SPA React). 
 I've used several build tools, like Vite and Next.js within a monorepo, created a CSS library for the project and build custom graphs for reporting.
-It's going to be released soon, but if you want to see it in action, send me an [andjelko.cvjetkovic@gmail.com](mailto:andjelko.cvjetkovic@gmail.com) and I'll send you an invitation.
+It's going to be released soon, but if you want to see it in action, send me an email [andjelko.cvjetkovic@gmail.com](mailto:andjelko.cvjetkovic@gmail.com) and I'll send you an invitation.
 
 
 My last recent project was a one page web site for [ALJ Enterprise](https://alj-web.vercel.app/en), project is still under development, so I'll update this when it is finished.
