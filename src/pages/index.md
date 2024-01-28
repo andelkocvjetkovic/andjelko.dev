@@ -47,14 +47,19 @@ Here is the list:
 
  - TypeScript(My favorite language)
  - React(My favorite front-end framework)
- - Neovim
+ - Svelte and Vue
  - Next.js
- - Node.js
+ - JavaScript and Node.js
+ - Visualization libraries such as D3 and Visx
+ - Neovim
  - TailwindCSS, CSS, CSS Modules and SCSS
  - Authorization flow with JWT
- - Rest API and Postman
+ - Rest API
+ - Postman
  - Browser APIs
+ - Web animations
  - Git
+ - CMS such as Strapi and Sanity
  - Front-end build tools
  - Unit testing with Jest
  - Integration testing with React Testing Library
