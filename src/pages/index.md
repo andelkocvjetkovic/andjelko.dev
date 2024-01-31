@@ -8,8 +8,6 @@ layout: ../layouts/base-layout.astro
 
 I currently work as a Front-end Developer at Codepool. 
 I code on the web using my favorite language TypeScript in combination with React.
-Currently learning functional programming, how to write code with less side effects or how to keep them under control.
-A big fan of Neovim, using it for almost 2 years.
 
 
 
@@ -37,7 +35,6 @@ I've used several build tools, like Vite and Next.js within a monorepo, created 
 It's going to be released soon, but if you want to see it in action, send me an email [andjelko.cvjetkovic@gmail.com](mailto:andjelko.cvjetkovic@gmail.com) and I'll send you an invitation.
 
 
-My last recent project was a one page web site for [ALJ Enterprise](https://alj-web.vercel.app/en), project is still under development, so I'll update this when it is finished.
 
 
 
@@ -47,14 +44,15 @@ Throughout my career, I've acquired various skills, and I am thrilled to solve p
 Here is the list:
 
  - TypeScript(My favorite language)
+ - JavaScript and Node.js
  - React(My favorite front-end framework)
  - Svelte and Vue
  - Next.js
- - JavaScript and Node.js
  - Visualization libraries such as D3 and Visx
- - Neovim
  - TailwindCSS, CSS, CSS Modules and SCSS
  - Authorization flow with JWT
+ - Neovim
+ - Internationalization(i18n) Arabic and English
  - Rest API
  - Postman
  - Browser APIs
