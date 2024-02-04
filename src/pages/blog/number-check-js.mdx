@@ -1,0 +1,130 @@
+import { Image } from 'astro:assets';
+import BaseLayout from '../../layouts/base-layout.astro';
+import diagarm from '../../images/diagram.png';
+import Prose from '../../components/prose.astro';
+
+<BaseLayout>
+ <Prose>
+
+## Number check js
+
+As a front-end developer, I often have to deal with numbers. I have to check if a value is a number, parse it, and use it in calculations. 
+Like everything in JavaScript, it's not always straightforward.
+What is value number? It is number that user can type in input, or it can be a number that user try to past it from clipboard.
+It can be a string, a number, or a big-int.
+
+
+
+
+```javascript
+'use strict';
+
+// Layer down
+
+function isNumber(mybNumber) {
+  return typeof mybNumber === 'number' && !Number.isNaN(mybNumber);
+}
+
+function isBigInt(mybNumber) {
+  return typeof mybNumber === 'bigint';
+}
+
+// Middle layer
+
+function parseNumber(value,defaultValue) {
+  const res = parseFloat(value);
+  return isNumber(res) ? Number(res) : defaultValue;
+}
+
+
+// Layer up
+
+
+function getNumber(value,defaultValue = 0) {
+  return isBigInt(value) ?  value : parseNumber(value, defaultValue);
+}
+
+```
+
+## Stratified Design
+
+I've used a stratified design to create the functions: 
+    - The `isNumber` and `isBigInt` functions are the lowest layer. They are used to check if the value is a number or a big-int.
+    - The `parseNumber` function is the middle layer. It's used to parse the value and return a number. If the value can't be parsed, it returns the default value.
+    - The `getNumber` function is the highest layer. It's used to get the number from the value. If the value is a big-int, it returns the value. If the value is a number, it returns the value. If the value is a string, it tries to parse the number from the string. If it can't parse the number, it returns the default value.
+
+
+I've created diagrams to illustrate the stratified design.
+
+<Image src={diagarm} alt="Number check js diagram" />
+
+
+## Tests
+
+But this is not tested, so let's fix that.
+Writing test in JavaScript is easy, thank to Jest. Simply install it global 
+with
+```bash
+npm install -g jest
+```
+and run jest from your command line.
+```bash
+jest nameOfFile.js
+```
+
+```javascript
+
+describe('isNumber', () => {
+  it('should return true for numbers', () => {
+    expect(isNumber(1)).toBe(true);
+    expect(isNumber(0)).toBe(true);
+  });
+  it('should return false for NaN', () => {
+    expect(isNumber(NaN)).toBe(false);
+  });
+  it('should return false for not numbers', () => {
+    expect(isNumber('1')).toBe(false);
+    expect(isNumber('0')).toBe(false);
+    expect(isNumber('abc')).toBe(false);
+    expect(isNumber('1abc')).toBe(false);
+    expect(isNumber('abc1')).toBe(false);
+    expect(isNumber(null)).toBe(false);
+    expect(isNumber(undefined)).toBe(false);
+    expect(isNumber({})).toBe(false);
+    expect(isNumber([])).toBe(false);
+  });
+});
+
+describe('getNumber', () => {
+  it('should return number for type number', () => {
+    expect(getNumber(1)).toBe(1);
+    expect(getNumber(0)).toBe(0);
+    expect(getNumber(-1)).toBe(-1);
+    expect(getNumber(1.1)).toBe(1.1);
+  });
+  it('should return big-int for type big-int', () => {
+    expect(getNumber(1n)).toBe(1n);
+    expect(getNumber(-1n)).toBe(-1n);
+  });
+  it('should return number if can parse number from it', () => {
+    expect(getNumber('1')).toBe(1);
+    expect(getNumber('0')).toBe(0);
+    expect(getNumber('-1')).toBe(-1);
+    expect(getNumber('1.1')).toBe(1.1);
+    expect(getNumber('1abc!*(#!%^)')).toBe(1);
+    expect(getNumber('0abc!*(#!%^)')).toBe(0);
+    expect(getNumber('-1abc!*(#!%^)')).toBe(-1);
+    expect(getNumber('1.1abc!*(#!%^)')).toBe(1.1);
+  })
+  it('should return default value if can not parse number from it', () => {
+    expect(getNumber('abc!*(#!%^)')).toBe(0);
+    expect(getNumber('abc!*(#!%^)', 1)).toBe(1);
+  });
+});
+```
+
+## Thanks
+That's all for today, big thanks for reading, and see you next time. 🏂
+
+  </Prose>
+</BaseLayout>

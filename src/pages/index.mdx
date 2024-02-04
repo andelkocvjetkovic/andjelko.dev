@@ -1,10 +1,21 @@
----
-name: Andjelko Cvjetkovic
-position: Front-end Developer
-company: Codepool
-company_url: https://codepool.io
-layout: ../layouts/base-layout.astro
----
+import { Image } from 'astro:assets';
+import { MyInfo } from '../components/my-info.mdx';
+import avatar from '../images/avatar.jpeg';
+import Prose from '../components/prose.astro';
+import BaseLayout from '../layouts/base-layout.astro';
+
+
+<BaseLayout>
+
+<MyInfo 
+  name="Andjelko Cvjetkovic"
+  position="Front-end Developer"
+  company="Codepool"
+  company_url="https://codepool.io"
+  avatar={avatar}
+/>
+
+<Prose>
 
 I currently work as a Front-end Developer at Codepool. 
 I code on the web using my favorite language TypeScript in combination with React.
@@ -12,6 +23,9 @@ Currently learning functional programming and how to use it in my daily work.
 Big fan of Vim and Neovim, I use it for all my coding tasks.
 
 
+## Blogs
+
+ - [Number check js](/blog/number-check-js)
 
 
 ## Experience
@@ -84,3 +98,7 @@ Or if you want to see my code, you can check it on [Github](https://github.com/a
 ### Thanks
 
 It's time to say goodbye, it's winter and it's snowing, so I'm going to enjoy in snowboarding, see you next time. 🏂
+
+</Prose>
+
+</BaseLayout>

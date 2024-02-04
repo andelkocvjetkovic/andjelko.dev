@@ -1,20 +1,22 @@
 ---
+import Prose from '../components/prose.astro';
 import '@fontsource/be-vietnam-pro';
-import { ViewTransitions } from 'astro:transitions';
 
 ---
+
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Andjelko Cvjetkovic</title>
     <meta name="description" content="Frontend developer">
-    <ViewTransitions />
   </head>
-  <body class='text-neutral-100 bg-neutral-900'>
-    <main class='pt-10 pb-20'>
-      <button class='fixed top-4 right-4 p-2 bg-neutral-800 text-neutral-100 rounded-md' id='theme-switcher'>🌙</button>
-      <slot /> 
+  <body class='container bg-gray-800 text-yellow-700'>
+    <main class='pt-20 pb-16'>
+      <Prose>
+        <slot /> 
+      </Prose>
     </main>
   </body>
 </html>
+
