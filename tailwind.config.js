@@ -7,7 +7,7 @@ content: ['./src/**/*.{astro,html,md,mdx,ts,tsx}'],
     extend: {
       container: {
         center: true,
-        padding: "2rem",
+        padding: "1rem",
       },
       fontFamily: {
         sans: ["Be Vietnam Pro", ...defaultTheme.fontFamily.sans],

@@ -13,10 +13,12 @@ const { title, description } = Astro.props;;
     <ViewTransitions />
   </head>
   <body class='text-neutral-100 bg-neutral-900'>
-    <main class='pt-10 pb-20'>
+    <main class='pt-10 pb-20 container'>
       <slot /> 
       <footer class='text-center text-neutral-400 text-sm pt-14'>
-        <p>© 2024, Built with Astro</p>
+        <p>© 2024, Built with 
+          <a href="https://astro.build">Astro</a>
+        </p>
         <a href="/" class='text-neutral-300 hover:text-neutral-400 transition-colors'>andjelko.dev</a>
       </footer>
     </main>
