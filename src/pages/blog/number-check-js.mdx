@@ -13,7 +13,9 @@ import Prose from '../../components/prose.astro';
 
 As a front-end developer, I often have to deal with numbers. I have to check if a value is a number, parse it, and use it in calculations. 
 Like everything in JavaScript, it's not always straightforward.
-What is valid number? It is value that user can type in input, or it can be a value that user tries to past it from clipboard, or it can be a value that comes from the server.
+What is valid number, where is it come from? 
+It is value that user can type in input field, or it can be a value that user tries to past from clipboard, 
+or it can be a value that comes from the server.
 It can be a string, a number, a big-int, or any JavaScript value.
 
 
@@ -21,6 +23,19 @@ It can be a string, a number, a big-int, or any JavaScript value.
 
 ```javascript
 'use strict';
+
+// Layer up
+
+function getNumber(value,defaultValue = 0) {
+  return isBigInt(value) ?  value : parseNumber(value, defaultValue);
+}
+
+// Middle layer
+
+function parseNumber(value,defaultValue) {
+  const res = parseFloat(value);
+  return isNumber(res) ? Number(res) : defaultValue;
+}
 
 // Layer down
 
@@ -32,20 +47,6 @@ function isBigInt(mybNumber) {
   return typeof mybNumber === 'bigint';
 }
 
-// Middle layer
-
-function parseNumber(value,defaultValue) {
-  const res = parseFloat(value);
-  return isNumber(res) ? Number(res) : defaultValue;
-}
-
-
-// Layer up
-
-
-function getNumber(value,defaultValue = 0) {
-  return isBigInt(value) ?  value : parseNumber(value, defaultValue);
-}
 
 ```
 
@@ -65,15 +66,7 @@ I've created diagrams to illustrate the stratified design.
 ## Tests
 
 But this is not tested, so let's fix that.
-Writing test in JavaScript is easy, thank to Jest. Simply install it global 
-with
-```bash
-npm install -g jest
-```
-and run jest from your command line.
-```bash
-jest nameOfFile.js
-```
+Writing test in JavaScript is easy, thanks to Jest. 
 
 ```javascript
 
