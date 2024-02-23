@@ -5,14 +5,14 @@ export function MyInfo({ avatar, name, position, company_url, company }) {
     <div class="flex max-w-[65ch] mx-auto pb-6">
       <div class="flex gap-x-6">
         <Image
-          class="w-20 h-20 border-black border-2 rounded-md object-center object-cover"
+          class="w-24 h-28 border-black border-2 rounded-md object-center object-cover"
           width={80}
           height={80}
           src={avatar}
           alt={name}
         />
         <div>
-          <h1 class="text-2xl text-balance">{name}</h1>
+          <h1 class="text-3xl text-balance">{name}</h1>
           <p class="text-sm text-balance">
             {position} at{" "}
             <a
