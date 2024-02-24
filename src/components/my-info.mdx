@@ -1,23 +1,17 @@
-import { Image } from "astro:assets";
+import Avatar from './avatar.astro'
 
 export function MyInfo({ avatar, name, position, company_url, company }) {
   return (
-    <div class="flex max-w-[65ch] mx-auto pb-6">
-      <div class="flex gap-x-6">
-        <Image
-          class="w-24 h-28 border-black border-2 rounded-md object-center object-cover"
-          width={80}
-          height={80}
-          src={avatar}
-          alt={name}
-        />
+    <div class="flex mx-auto pb-4">
+      <div class="flex gap-x-3">
+        <Avatar />
         <div>
-          <h1 class="text-3xl text-balance">{name}</h1>
-          <p class="text-sm text-balance">
+          <h1 class="text-2xl xl:text-4xl text-balance pb-1">{name}</h1>
+          <p class="text-xs font-light xl:text-sm text-balance">
             {position} at{" "}
             <a
               href={company_url}
-              class="text-orange-500 underline"
+              class="text-primary underline"
               target="_blank"
               rel="noopener noreferrer"
             >
